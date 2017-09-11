@@ -11,9 +11,9 @@ RUN yum -y update && \
         perl-CPAN && \
     cpan -i CPAN && \
     cpan -i Net::SFTP::Foreign \
-     STEVENL/Test-Mocha-0.61.tar.gz \
-     Test::Unit::Lite \
-     REST::Client && \
+        STEVENL/Test-Mocha-0.61.tar.gz \
+        Test::Unit::Lite \
+        REST::Client && \
     yum clean all
 
 
