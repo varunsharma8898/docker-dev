@@ -12,8 +12,10 @@ Check out [this page](https://docs.docker.com/machine/migrate-to-machine/) to mi
 ## Getting Started
 
 ### To start boot2docker
+```
 boot2docker up
 $(boot2docker shellinit)
+```
 
 ### To build docker-dev image locally
 ```
