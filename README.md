@@ -1,5 +1,5 @@
 # docker-dev
-Docker with Perl, Python3 and a few useful packages - to quick start development without worrying up about environment.
+Docker with Perl, Python3 and a few useful packages - to quick start development without worrying about seting up environment and dependencies.
 
 ## Prerequisites
 Boot2Docker
