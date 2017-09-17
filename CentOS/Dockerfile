@@ -19,16 +19,13 @@ RUN yum -y install python36u \
         mysql \
         "perl(DBD::mysql)" \
         mlocate \
-        vim
-
-RUN yum clean all
+        vim && \
+        yum clean all
 
 # Install libs from Perl and Python here
 #RUN cpan -i Net::SFTP::Foreign \
 #        STEVENL/Test-Mocha-0.64.tar.gz \
 #        Test::Unit::Lite \
-#        REST::Client && \
-#    yum clean all
+#        REST::Client
 
 RUN updatedb
-
