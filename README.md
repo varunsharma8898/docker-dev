@@ -1,5 +1,5 @@
-# docker-dev
-Docker with Perl, Python3 and a few useful packages - to quick start development without worrying about seting up environment and dependencies.
+# DockerDev
+Docker with Perl, Python3, MariaDB and a few other useful packages - to quick start development without worrying about seting up environment and dependencies.
 
 ## Prerequisites
 Boot2Docker
@@ -17,13 +17,8 @@ boot2docker up
 $(boot2docker shellinit)
 ```
 
-### To build docker-dev image locally
-```
-docker build --rm -t github/docker-dev /Users/sharmava/Github/DockerDev/CentOS
-```
+### CentOS
+Check out [CentOS_README](CentOS/CentOS_README.md) on how to build and run a docker-dev image based on CentOS.
 
-### To run the local image
-```
-docker run -it -v /Users:/Users github/docker-dev /bin/bash
-```
-Note that I've mounted /Users directory here. You should choose a different directory where your code is present.
+### MariaDB
+Check out [MariaDB_README.md](MariaDB/MariaDB_README.md) on how to set up mariaDB in a docker container and access it from docker-dev.
