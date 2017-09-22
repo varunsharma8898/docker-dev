@@ -39,9 +39,9 @@ docker inspect vsharma-mariadb
 ## To connect MariaDB from another docker container
 Use the IPAddress found from the previous step. I've not setup any user, so using the root user and a simple password used in one of the earlier steps.
 ```
-docker run -it -v /Users:/Users github/vsharma-dockerdev /bin/bash
+docker run -it --link=vsharma-mariadb -v /Users:/Users github/vsharma-dockerdev /bin/bash
 
-mysql -h 172.17.0.5 -u root -p
+mysql -h vsharma-mariadb -u root -p
 ```
 
 ## For more info:

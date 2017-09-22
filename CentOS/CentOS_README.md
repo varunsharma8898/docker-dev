@@ -4,6 +4,7 @@
 ```
 docker build --rm -t github/vsharma-dockerdev /Users/sharmava/Github/DockerDev/CentOS
 ```
+Note that dir ```/Users/sharmava/Github/DockerDev/CentOS``` is where my Dockerfile is present.
 
 ### To run the local image
 ```
