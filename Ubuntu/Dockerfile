@@ -7,6 +7,7 @@ RUN apt-get -qqy install \
     libdbd-mysql-perl \
     mlocate \
     mysql-client \
+    python3-pip \
     python3-pymysql \
     vim
 
